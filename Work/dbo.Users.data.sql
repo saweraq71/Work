@@ -1,5 +1,10 @@
-﻿SET IDENTITY_INSERT [dbo].[Users] ON
-INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (3, N'Филиппович Гоша Николаевич', N'Оператор', N'79645845316', NULL, NULL)
-INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (4, N'Марценюк Дмитрий Сергеевич', N'Поставщик', N'+79645840312', N'/Files/depositphotos_12630302-stock-photo-3d-man-showing-thumbs-up.jpg', N'depositphotos_12630302-stock-photo-3d-man-showing-thumbs-up.jpg')
+SET IDENTITY_INSERT [dbo].[Users] ON
+INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (3, N'Филиппович Георгий Николаевич', N'Оператор', N'+79645845316', N'/Files/depositphotos_6571442-stock-photo-man-with-magnifying-glass-looking.jpg', N'depositphotos_6571442-stock-photo-man-with-magnifying-glass-looking.jpg')
+INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (4, N'Марценюк Дмитрий Сергеевич', N'Поставщик', N'+79645840312', N'/Files/shutterstock_123142174.jpg', N'shutterstock_123142174.jpg')
 INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (5, N'Степанов Семен Сергеевич', N'Начальник отдела', N'+79543545723', N'/Files/bcc4151fc832965a4a648c665d16daf4.jpg', N'bcc4151fc832965a4a648c665d16daf4.jpg')
+INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (6, N'Афанасенков Андрей Витальевич', N'Работник склада', N'+79520814431', N'/Files/8446841313070cc4714ff30357edd273.jpg', N'8446841313070cc4714ff30357edd273.jpg')
+INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (7, N'Грущенко Петр Станиславович', N'Электрик', N'+79543214421', N'/Files/resize.png', N'resize.png')
+INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (8, N'Бабанина Екатерина Васильевна', N'Шеф ', N'+79542331234', N'/Files/depositphotos_12630302-stock-photo-3d-man-showing-thumbs-up.jpg', N'depositphotos_12630302-stock-photo-3d-man-showing-thumbs-up.jpg')
+INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (9, N'Ильдар Ринатович Зуранбаев', N'Каменщик', N'+7965468316', N'/Files/150e6a7b9c120b5df1d8940ece674e20.jpg', N'150e6a7b9c120b5df1d8940ece674e20.jpg')
+INSERT INTO [dbo].[Users] ([Id], [FIO], [POS], [TEL], [PATH], [Imagename]) VALUES (10, N'Рублев Алексей Владимирович', N'Сварщик', N'+795435434567', N'/Files/depositphotos_12629911-stock-photo-sad-3d-man-sitting-on.jpg', N'depositphotos_12629911-stock-photo-sad-3d-man-sitting-on.jpg')
 SET IDENTITY_INSERT [dbo].[Users] OFF
