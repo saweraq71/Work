@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Work.Models.User>
+@{
+    ViewBag.Title = "Все пользователи";
+}
+
+<table class="table">
+    <form asp-controller="Home" asp-action="Index">
+        <input type="text" name="SearchString" />
+        <input type="submit" value="Сброс" />
+    </form>
+        <a asp-action="Create" > <input type="submit" value="Добавить пользователя"</a >
+
+    <tr><td>Фото сотрудника</td><td>ФИО</td><td>Должность</td><td>Телефон</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><img style='width:80px; height:80px;' src="@Url.Content(item.PATH)"></td>
+            <td>@item.FIO</td>
+            <td>@item.POS</td>
+            <td>@item.TEL</td>
+            <td>
+                <a asp-action="Edit" asp-controller="Home" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Home" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>

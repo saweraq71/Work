@@ -1,0 +1,37 @@
+﻿@model Work.Models.User
+@{
+    ViewBag.Title = "Удаление пользователя";
+}
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>ФИО</dt>
+        <dd>
+            @Html.DisplayFor(model => model.FIO)
+        </dd>
+
+        <dt>Должность</dt>
+        <dd>
+            @Html.DisplayFor(model => model.POS)
+        </dd>
+
+        <dt>Телефон</dt>
+        <dd>
+            @Html.DisplayFor(model => model.TEL)
+        </dd>
+        <dt>Фото</dt>
+        <dd>
+        
+            <img img style='width:80px; height:80px;' src = @Html.DisplayFor(model => model.PATH)  >
+
+        </dd>
+    </dl>
+
+    <div>
+        <form asp-controller="Home" asp-action="Delete" method="post">
+            <div class="form-group">
+                <input type="submit" class="btn btn-default" value="Удалить" />
+            </div>
+        </form>
+    </div>
+</div>

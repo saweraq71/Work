@@ -1,0 +1,25 @@
+﻿@model Work.Models.User
+
+@{
+    ViewBag.Title = "Добавление пользователя";
+}
+
+<form asp-action="Сreate" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="FIO" class="control-label">ФИО</label>
+        <input type="text" asp-for="FIO" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="POS" class="control-label">Должность</label>
+        <input type="text" asp-for="POS" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TEL" class="control-label">Телефон</label>
+        <input type="text" asp-for="TEL" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PATH" class="control-label">Фото</label>
+        <input type="file" asp-for="PATH" class="form-control" name="uploadedFile" />
+    </div>
+    <input type="submit" formenctype="multipart/form-data" value="Загрузить" />
+</form>
