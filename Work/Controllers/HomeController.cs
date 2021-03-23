@@ -85,9 +85,10 @@ namespace Work.Controllers
                 }
                 user.PATH = path;
                 user.Imagename = uploadedFile.FileName;
+                db.SaveChanges();
+                db.Users.Update(user);
+                await db.SaveChangesAsync();
             }   
-            db.Users.Update(user);
-            await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
 
